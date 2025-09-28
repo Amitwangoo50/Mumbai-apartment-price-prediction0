@@ -1,0 +1,107 @@
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+/* Container for the main content */
+.content-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent white */
+    min-height: 100vh;
+    padding: 30px; /* Adjusted padding */
+    max-width: 700px; /* Adjusted max width */
+    margin: 30px auto; /* Adjusted margin */
+    border-radius: 8px; /* Slightly smaller border radius */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* Adjusted margin */
+    color: #0056b3; /* A shade of blue */
+    font-family: 'Georgia', serif; /* Different font for heading */
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 8px; /* Adjusted margin */
+    color: #007bff; /* A brighter blue */
+    font-size: 1.1em; /* Slightly smaller heading */
+}
+
+/* Input and Dropdown styling */
+.dash-input-container, .dash-dropdown-container {
+    margin-bottom: 20px; /* Consistent spacing */
+}
+
+.dash-input, .dash-dropdown {
+    width: 60%; /* Increased width */
+    margin: 0 auto;
+    display: block;
+    padding: 10px; /* Adjusted padding */
+    border-radius: 4px; /* Smaller border radius */
+    border: 1px solid #ccc; /* Lighter border */
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Button styling */
+#predict-button {
+    display: block;
+    margin: 30px auto; /* Adjusted margin */
+    padding: 12px 25px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Smaller border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#predict-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Output prediction styling */
+#output-prediction {
+    text-align: center;
+    margin-top: 30px; /* Adjusted margin */
+    font-size: 20px; /* Adjusted font size */
+    font-weight: bold;
+    color: #0056b3; /* Matching heading color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .dash-input, .dash-dropdown {
+        width: 80%; /* Wider on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    #predict-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #output-prediction {
+        font-size: 18px;
+    }
+}
