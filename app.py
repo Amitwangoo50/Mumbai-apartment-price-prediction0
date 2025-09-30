@@ -34,7 +34,7 @@ with open('model.pickle', 'rb') as f:
     model = pickle.load(f)
     
 # Increase the intercept of the Ridge model
-model.named_steps["ridge"].intercept_ = 2650000
+model.named_steps["ridge"].intercept_ = 2800000
 
 # Create the Dash app
 app = dash.Dash(__name__)
@@ -282,3 +282,4 @@ def update_output(n_clicks, area, location, bhk, resale, swimmingpool, landscape
 if __name__ == '__main__':
 
     app.run(debug=True)
+
